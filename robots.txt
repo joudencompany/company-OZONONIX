@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /assets/
 
 Sitemap: https://ozononix.com/sitemap.xml
+Sitemap: https://ozononix.com/shift-app/sitemap.xml
+Sitemap: https://ozononix.com/hp/sitemap.xml
