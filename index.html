@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- パフォーマンス最適化（Core Web Vitals） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://ozononix.com">
+
     <!-- 基本SEO -->
     <title>OZONONIX | ホームページ制作・シフト管理アプリ【熊本・全国対応】</title>
-    <meta name="description" content="OZONONIXは高品質・低価格なホームページ制作とシフト管理アプリ「オゾシフ」を提供。初月1ヶ月無料・全額返金保証・最短3日導入。熊本発・全国対応。">
-    <meta name="keywords" content="OZONONIX,オゾノニクス,ホームページ制作,HP作成,Web制作,シフト管理アプリ,オゾシフ,飲食店,美容室,熊本,熊本市,全国対応,格安,全額返金保証,初月無料,月額1980円">
+    <meta name="description" content="OZONONIXは初期費用5,000円〜のホームページ制作と月額1,980円〜のシフト管理アプリ「オゾシフ」を提供。初月1ヶ月無料・全額返金保証・最短3日導入・違約金なし。熊本発・全国対応。飲食店・美容室に最適。">
+    <meta name="keywords" content="OZONONIX,オゾノニクス,ホームページ制作,HP作成,Web制作,ウェブサイト制作,シフト管理アプリ,シフト管理システム,シフト作成,オゾシフ,飲食店,飲食店向けシフト管理,美容室,美容室向けシフト管理,熊本,熊本市,熊本県,全国対応,格安,低価格,全額返金保証,初月無料,無料トライアル,月額1980円,月額固定,初期費用なし,違約金なし,最短3日導入,スマホ対応,SEO対策,業務効率化">
     <meta name="author" content="OZONONIX">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://ozononix.com/">
 
     <!-- OGP -->
@@ -25,44 +29,73 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ozononix">
     <meta name="twitter:title" content="OZONONIX | ホームページ制作・シフト管理アプリ【熊本・全国対応】">
-    <meta name="twitter:description" content="初月無料・全額返金保証・最短3日導入。熊本発・全国対応。">
+    <meta name="twitter:description" content="初期費用5,000円〜HP制作・月額1,980円〜シフト管理。初月無料・全額返金保証・最短3日導入・違約金なし。熊本発・全国対応。">
     <meta name="twitter:image" content="https://ozononix.com/ogp.png">
 
-    <!-- JSON-LD: LocalBusiness -->
+    <!-- JSON-LD: Organization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "Organization",
       "name": "OZONONIX",
       "alternateName": "オゾノニクス",
       "url": "https://ozononix.com/",
-      "logo": "https://ozononix.com/ogp.png",
+      "logo": {"@type": "ImageObject", "url": "https://ozononix.com/ogp.png", "width": 1200, "height": 630},
       "image": "https://ozononix.com/ogp.png",
-      "description": "HP制作（初期費用5,000円〜）とシフト管理アプリ（月額1,980円〜）を提供。初月無料・全額返金保証・最短3日導入。熊本・全国対応。",
+      "description": "ホームページ制作（初期費用5,000円〜）とシフト管理アプリ「オゾシフ」（月額1,980円〜）を提供。初月無料・全額返金保証・最短3日導入・違約金なし。熊本発・全国対応。",
+      "foundingDate": "2025-10-08",
+      "founders": [{"@type": "Person", "name": "鬼塚 朔誠"}],
       "address": {"@type": "PostalAddress", "addressRegion": "熊本県", "addressLocality": "熊本市", "addressCountry": "JP"},
-      "areaServed": "JP",
-      "priceRange": "¥〜¥¥",
+      "contactPoint": {"@type": "ContactPoint", "email": "joudencompany@gmail.com", "contactType": "customer service", "availableLanguage": "Japanese"},
+      "areaServed": {"@type": "Country", "name": "Japan"},
+      "sameAs": ["https://ozononix.com/"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "OZONONIXサービス一覧",
         "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "シフト管理アプリ（オゾシフ）", "url": "https://ozononix.com/shift-app/"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ホームページ制作", "url": "https://ozononix.com/hp/"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "シフト管理アプリ（オゾシフ）", "url": "https://ozononix.com/shift-app/"}, "price": "1980", "priceCurrency": "JPY", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "1980", "priceCurrency": "JPY", "unitText": "月"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ホームページ制作", "url": "https://ozononix.com/hp/"}, "price": "5000", "priceCurrency": "JPY"},
           {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "業務効率化アプリ開発", "url": "https://ozononix.com/app/"}}
         ]
       }
     }
     </script>
 
-    <!-- JSON-LD: WebSite -->
+    <!-- JSON-LD: SoftwareApplication（オゾシフ） -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "オゾシフ",
+      "alternateName": "OZOSHIFU",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "url": "https://ozononix.com/shift-app/",
+      "description": "飲食店・美容室向けシフト管理アプリ。スマホで簡単操作、自動シフト作成、スタッフへのプッシュ通知対応。月額1,980円〜、初月無料、全額返金保証。",
+      "offers": {
+        "@type": "Offer",
+        "price": "1980",
+        "priceCurrency": "JPY",
+        "priceSpecification": {"@type": "UnitPriceSpecification", "price": "1980", "priceCurrency": "JPY", "unitText": "月"},
+        "availability": "https://schema.org/InStock"
+      },
+      "featureList": ["シフト自動作成", "スマホ対応", "プッシュ通知", "複数店舗管理", "CSV出力", "リアルタイム共有"],
+      "screenshot": "https://ozononix.com/ogp.png",
+      "provider": {"@type": "Organization", "name": "OZONONIX", "url": "https://ozononix.com/"}
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite with SearchAction -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "OZONONIX",
       "url": "https://ozononix.com/",
-      "description": "ホームページ制作・シフト管理アプリ・業務効率化アプリ開発。熊本・全国対応。"
+      "description": "ホームページ制作・シフト管理アプリ・業務効率化アプリ開発。熊本発・全国対応。",
+      "publisher": {"@type": "Organization", "name": "OZONONIX"}
     }
     </script>
 
@@ -72,12 +105,30 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "シフト管理アプリの料金はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "ベーシック月額1,980円（〜19名・1店舗）、スタンダード月額2,980円（〜40名・店舗数無制限）、プレミアム月額3,980円（無制限・優先サポート）。"}},
-        {"@type": "Question", "name": "ホームページ制作の費用はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "ベーシック初期費用5,000円〜（SEO・スマホ対応・フォーム込み）、スタンダード10,000円〜、プロ40,000円〜。"}},
-        {"@type": "Question", "name": "無料トライアルはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。シフト管理アプリは初月1ヶ月間、全機能を制限なく無料でお試しいただけます。"}},
-        {"@type": "Question", "name": "満足できなかった場合はどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "全額返金保証。理由を問わず全額返金いたします。違約金・解約手数料は一切かかりません。"}},
-        {"@type": "Question", "name": "最短で何日で導入できますか？", "acceptedAnswer": {"@type": "Answer", "text": "お問い合わせから最短3営業日でご利用開始できます。"}},
-        {"@type": "Question", "name": "熊本以外でも対応できますか？", "acceptedAnswer": {"@type": "Answer", "text": "全国対応しています。オンラインでのやり取りで導入・制作が可能です。"}}
+        {"@type": "Question", "name": "シフト管理アプリの料金はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "ベーシック月額1,980円（〜19名・1店舗）、スタンダード月額2,980円（〜40名・店舗数無制限）、プレミアム月額3,980円（無制限・優先サポート）。すべて初月1ヶ月無料。"}},
+        {"@type": "Question", "name": "ホームページ制作の費用はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "ベーシック初期費用5,000円〜（SEO・スマホ対応・お問い合わせフォーム込み）、スタンダード10,000円〜、プロ40,000円〜。"}},
+        {"@type": "Question", "name": "無料トライアルはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。シフト管理アプリ「オゾシフ」は初月1ヶ月間、全機能を制限なく無料でお試しいただけます。クレジットカード登録不要です。"}},
+        {"@type": "Question", "name": "満足できなかった場合はどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "全額返金保証。理由を問わず全額返金いたします。違約金・解約手数料は一切かかりません。安心してお試しください。"}},
+        {"@type": "Question", "name": "最短で何日で導入できますか？", "acceptedAnswer": {"@type": "Answer", "text": "お問い合わせから最短3営業日でご利用開始できます。初期設定のサポートも無料で対応します。"}},
+        {"@type": "Question", "name": "熊本以外でも対応できますか？", "acceptedAnswer": {"@type": "Answer", "text": "全国対応しています。オンラインでのやり取りで導入・制作が可能です。遠方でも問題ありません。"}},
+        {"@type": "Question", "name": "飲食店でも使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、飲食店向けに特化した機能を備えています。複数店舗の一括管理、アルバイトスタッフのシフト希望収集、自動シフト作成に対応しています。"}},
+        {"@type": "Question", "name": "美容室でも利用できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。美容室・サロン向けにも最適です。スタッフのシフト管理を効率化し、スマホからいつでも確認できます。"}},
+        {"@type": "Question", "name": "契約期間の縛りはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "月額契約で違約金・解約手数料は一切ありません。いつでも解約可能です。"}},
+        {"@type": "Question", "name": "スマホからでも操作できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。スマートフォン・タブレット・PCすべてに対応したレスポンシブデザインです。プッシュ通知機能も備えており、シフト変更をリアルタイムで通知します。"}}
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ozononix.com/"},
+        {"@type": "ListItem", "position": 2, "name": "シフト管理アプリ", "item": "https://ozononix.com/shift-app/"},
+        {"@type": "ListItem", "position": 3, "name": "ホームページ制作", "item": "https://ozononix.com/hp/"},
+        {"@type": "ListItem", "position": 4, "name": "業務効率化アプリ", "item": "https://ozononix.com/app/"}
       ]
     }
     </script>
