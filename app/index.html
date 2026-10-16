@@ -131,23 +131,45 @@
   <body>
     <div id="root"></div>
 
-    <!-- プリレンダー（React起動前・Googleクローラー向けコンテンツ） -->
-    <noscript>
-      <h1>業務効率化アプリ開発 500,000円〜 熊本発・全国対応 | OZONONIX</h1>
-      <p>中小企業・飲食店・美容室向けの業務効率化アプリ完全カスタム開発。在庫管理・予約管理・勤怠管理・シフト管理システムを格安で開発。分割払い対応・無料相談から。</p>
-      <h2>対応システム例</h2>
-      <ul>
-        <li>在庫管理・原価管理システム（飲食店向け）</li>
-        <li>予約管理システム（美容室・サロン・クリニック向け）</li>
-        <li>勤怠管理・シフト管理システム</li>
-        <li>受発注管理・顧客管理（CRM）</li>
-        <li>Excel・紙業務のシステム化・自動化</li>
-      </ul>
-      <h2>料金・期間</h2>
-      <p>初期費用500,000円〜・分割払い対応。シンプルな機能は1〜2ヶ月、複数機能は3〜6ヶ月。まず無料相談でお見積もり。</p>
-      <h2>よくある質問</h2>
-      <p>Q. 熊本で業務効率化アプリを格安開発できますか？ A. 在庫管理・予約管理・勤怠管理を500,000円〜で格安開発。全国対応。</p>
-      <p>Q. 既存のExcel業務をシステム化できますか？ A. Excel・紙帳票のシステム化・自動化が得意分野です。</p>
-    </noscript>
+    <!-- プリレンダー（React起動前に表示・Googleクローラー向け） -->
+    <style id="pr-style">
+      #pr{position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);color:#fff;font-family:'Hiragino Sans','Yu Gothic',sans-serif;overflow-y:auto;padding:40px 20px;}
+      #pr h1{font-size:clamp(1.4rem,5vw,2.2rem);font-weight:900;margin-bottom:12px;}
+      #pr p{font-size:clamp(0.9rem,3vw,1.05rem);opacity:.92;line-height:1.7;margin-bottom:20px;}
+      #pr .pr-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
+      #pr .pr-badge{background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.4);border-radius:999px;padding:5px 16px;font-size:.85rem;font-weight:600;}
+      #pr .pr-features{background:rgba(255,255,255,.08);border-radius:12px;padding:16px 20px;margin-bottom:20px;}
+      #pr .pr-features li{margin-bottom:6px;font-size:.9rem;}
+      #pr .pr-btns{display:flex;flex-wrap:wrap;gap:12px;}
+      #pr .pr-btn{background:#3b82f6;color:#fff;font-weight:800;font-size:.95rem;padding:12px 28px;border-radius:999px;text-decoration:none;}
+      #pr .pr-btn-sub{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);font-weight:700;font-size:.95rem;padding:12px 28px;border-radius:999px;text-decoration:none;}
+    </style>
+    <div id="pr">
+      <h1>業務効率化アプリ開発 熊本【在庫管理・予約管理・勤怠管理】500,000円〜</h1>
+      <p>中小企業・飲食店・美容室向け完全カスタムアプリ開発。Excel・紙業務のシステム化も対応。分割払い・無料相談から。熊本発・全国対応。</p>
+      <div class="pr-badges">
+        <span class="pr-badge">完全カスタム開発</span>
+        <span class="pr-badge">分割払い対応</span>
+        <span class="pr-badge">無料相談から</span>
+        <span class="pr-badge">熊本発・全国対応</span>
+      </div>
+      <div class="pr-features">
+        <p style="font-weight:700;margin-bottom:8px;">対応システム例</p>
+        <ul>
+          <li>在庫管理・原価管理（飲食店向け）</li>
+          <li>予約管理システム（美容室・サロン向け）</li>
+          <li>勤怠管理・シフト管理</li>
+          <li>受発注管理・顧客管理（CRM）</li>
+          <li>Excel・紙業務のシステム化・自動化</li>
+        </ul>
+      </div>
+      <div class="pr-btns">
+        <a href="/app/#contact" class="pr-btn">無料相談を始める</a>
+        <a href="/" class="pr-btn-sub">トップに戻る</a>
+      </div>
+    </div>
+    <script>
+      (function(){var o=new MutationObserver(function(){if(document.getElementById('root').childElementCount>0){var p=document.getElementById('pr');var s=document.getElementById('pr-style');if(p)p.remove();if(s)s.remove();o.disconnect();}});o.observe(document.getElementById('root'),{childList:true});})();
+    </script>
   </body>
 </html>
